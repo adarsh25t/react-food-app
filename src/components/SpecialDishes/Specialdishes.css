@@ -1,0 +1,49 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.special-dishes{
+    height: auto;
+    padding: 70px 100px;
+}
+.heading{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    letter-spacing: 2px;
+    color: rgb(170, 0, 34);
+    font-weight: 600;
+}
+.heading-sub{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+.special-dish{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 80px;
+}
+.dish-card{
+    width: 250px;
+    height: 200px;
+    position: relative;
+}
+.dish-card img{
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+    border-top-right-radius: 40px;
+}
+.dish-card h2{
+    width: 100%;
+    font-size: 13px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    letter-spacing: 1px;
+    position: absolute;
+    bottom: 30px;
+    color: rgb(153, 0, 31);
+    background-color: #ee9b01;
+    padding: 3px 0px;
+}

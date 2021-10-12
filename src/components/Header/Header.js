@@ -1,34 +1,28 @@
-import React from "react";
-import './Header.css'
-import Image_1 from '../../images/food-1.png'
-import Image_2 from '../../images/image-2.png'
-import Image_3 from '../../images/image-3.png'
+import React, { useState } from "react";
+import './Header.css';
+import { headerDetails } from "./Headerdetails";
+
 function Header(){
+    let [slider,setslider] = useState(0)
 
-
-        function FirstSlide(){
-            document.querySelector('.wrapper-1').style.opacity = 1;
-            document.querySelector('.wrapper-2').style.opacity = 0
-            document.querySelector('.wrapper-3').style.opacity = 0;
-        }
-        function SecondSlide(){
-            document.querySelector('.wrapper-1').style.opacity = 0;
-            document.querySelector('.wrapper-2').style.opacity = 1
-            document.querySelector('.wrapper-3').style.opacity = 0;
-        }
-        function ThirdSlide(){
-            document.querySelector('.wrapper-1').style.opacity = 0;
-            document.querySelector('.wrapper-2').style.opacity = 0
-            document.querySelector('.wrapper-3').style.opacity = 1;
-        }
-
+   
+    function FirstSlide(){
+        setslider(0)
+    }
+    function SecondSlide(){
+        setslider(1)
+    }
+    function ThirdSlide(){
+        setslider(2)
+    }
     
-        
+       
     return(
         
         <div className="header">
             <div className="navbar">
                 <h1><span>food</span>hub</h1>
+
                 <ul>
                     <li>Home</li>
                     <li>About Us</li>
@@ -36,6 +30,7 @@ function Header(){
                     <li>Reviews</li>
                     <li>Contact</li>
                 </ul>
+
                 <div className="header-3">
                     <div className="cart">
                         <i class="fas fa-shopping-cart"></i>
@@ -44,44 +39,21 @@ function Header(){
                     <button>Sign Up</button>
                 </div>
             </div>
+
             <div className="wrapper">
-                <div className="wrapper1 wrapper-1">
+                <div className="slider-wrapper">
+                <div className="wrapper1">
                     <div className="contents">
-                        <h1 className="content-1">Order Tasty & </h1>
-                        <h1 className="content-1">Fresh Food</h1>
-                        <h1 className="content-1-sub">anytime!</h1>
-                        <p>Just confirm your order and enjoy our delicious fastest delivery</p>
+                        <h1 className="content-1">{headerDetails[slider].Title_one}</h1>
+                        <h1 className="content-1">{headerDetails[slider].Title_Two}</h1>
+                        <h1 className="content-1-sub">{headerDetails[slider].Title_Three}</h1>
+                        <p>{headerDetails[slider].Paragraph}</p>
                         <button>Explore Our Menu</button>
                     </div>
                     <div className="images">
-                        <img src={Image_1} alt="" />
+                        <img src={headerDetails[slider].Image} alt="" />
                     </div>
                 </div>
-
-                <div className="wrapper1 wrapper-2">
-                    <div className="contents">
-                        <h1 className="content-1">We deliver</h1>
-                        <h1 className="content-1">the faste, As</h1>
-                        <h1 className="content-1-sub">You like</h1>
-                        <p>We deliver the delicious food for you.</p>
-                        <button>Explore Our Menu</button>
-                    </div>
-                    <div className="images">
-                        <img src={Image_2} alt=""  className="images-2"/>
-                    </div>
-                </div>
-
-                <div className="wrapper1 wrapper-3">
-                    <div className="contents">
-                        <h1 className="content-1">Order Healthy &</h1>
-                        <h1 className="content-1">Fresh Food</h1>
-                        <h1 className="content-1-sub">anytime!</h1>
-                        <p>Just confirm your order and enjoy our delicious fastest delivery</p>
-                        <button>Explore Our Menu</button>
-                    </div>
-                    <div className="images">
-                        <img src={Image_3} alt=""  className="images-2"/>
-                    </div>
                 </div>
                 <div className="btns">
                     <div className="one" onClick={FirstSlide}></div>

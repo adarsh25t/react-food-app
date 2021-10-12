@@ -1,0 +1,35 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.filtered-dishes{
+    padding: 60px 100px;
+    height: 500px;
+}
+.menucategory{
+    padding-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.menucategory .category{
+    background-color: #ee9b01;
+    padding: 10px 25px;
+    margin: 5px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.menucategory .category h2{
+    font-size: 18px;
+    color: rgb(173, 0, 35);
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+.menucategory .category:hover{
+    background-color: black;
+    
+}
+.menucategory .category:hover h2{
+    color: white;
+}

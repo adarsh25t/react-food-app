@@ -75,17 +75,20 @@
     align-items: center;
     flex-wrap: wrap;
     position: absolute;
-    transition: 2s;
+    
 }
+
 .content-1{
     font-size: 70px;
     font-family: 'Poppins', sans-serif;
     height: 80px;
+    
 }
 .content-1-sub{
     font-size: 70px;
     color: rgb(197, 0, 39);
     font-family: 'Poppins', sans-serif;
+   
 }    
 .wrapper1 p{
     font-size: 16px;
@@ -94,6 +97,7 @@
     letter-spacing: 1px;
     font-family: 'Poppins', sans-serif;
 }
+
 .contents button{
     padding: 15px 20px;
     background-color: black;
@@ -108,15 +112,7 @@
 .wrapper1 .images{
     margin-top: 20px;
 }
-.wrapper-1{
-    opacity: 1;
-}
-.wrapper-2{
-    opacity: 0;
-}
-.wrapper-3{
-    opacity: 0;
-}
+
 .wrapper-2 .images-2{
     margin-left: 100px;
 }
