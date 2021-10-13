@@ -10,7 +10,7 @@
     padding-top: 30px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    
 }
 .menucategory .category{
     background-color: #ee9b01;
@@ -32,4 +32,46 @@
 }
 .menucategory .category:hover h2{
     color: white;
+}
+.filtered-dishes-list{
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 60px;
+}
+.filter-item{
+    width: 250px;
+    height: 220px;
+    margin: 15px;
+}
+.filter-item img{
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.filter-item h2{
+    font-size: 12px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+.filter-item div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+.filter-item div button{
+    padding: 8px 20px;
+    background-color: rgb(161, 0, 32);
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 17px;
+}
+.filter-item div h3{
+    font-family: 'Poppins', sans-serif;
+    color: #0c0b0a;
+    font-weight: 600;
 }

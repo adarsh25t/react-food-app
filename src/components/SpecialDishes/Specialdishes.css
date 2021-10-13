@@ -21,7 +21,7 @@
 .special-dish{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
     margin-top: 80px;
 }
 .dish-card{
@@ -33,7 +33,7 @@
     width: 100%;
     height: 170px;
     object-fit: cover;
-    border-top-right-radius: 40px;
+    border-radius: 10px;
 }
 .dish-card h2{
     width: 100%;

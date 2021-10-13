@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react';
+import './Menu.css'
 import FilteredDishes from '../FilteredDishes/FilteredDishes';
 import HeaderCard from '../HeaderCard/HeaderCard';
 import SpecialDishes from '../SpecialDishes/SpecialDishes';
@@ -7,6 +8,7 @@ function Menu() {
     let [menu_1, setmenu_1] = useState([]);
     let [specialmenu, setspecialmenu] = useState([]);
     let [menucategories,setmenucategories] = useState([]);
+    let [loading,setloading] = useState(true)
 
     let prices = [23,14,18,22,12,7,9,21];
     let star = ['⋆','⋆⋆','⋆⋆⋆','⋆⋆⋆⋆','⋆⋆⋆⋆⋆']
@@ -22,7 +24,8 @@ function Menu() {
         const API_URl = "https://www.themealdb.com/api/json/v1/1/search.php?f=c";
         let response = await fetch(API_URl);
         let Data = await response.json();
-        setspecialmenu(Data.meals)
+        setspecialmenu(Data.meals);
+        setloading(false);
     }
 
     async function MenuCategories(){
@@ -41,13 +44,10 @@ function Menu() {
 
     return (
         <div>
-            <HeaderCard 
-                SpeacialMenu = {menu_1}
-                prices = {prices}
-                star = {star}
-            />
-            <SpecialDishes specialmenu = {specialmenu}/>
-            <FilteredDishes menucategories = {menucategories}/>
+            <HeaderCard SpeacialMenu = {menu_1} prices = {prices} star = {star}/>
+            {!loading ? <SpecialDishes specialmenu = {specialmenu}/> : <div className="loader"><div className="ripple"><h1>loading...</h1></div></div>}
+            {!loading ?    <FilteredDishes menucategories = {menucategories} specialmenu = {specialmenu}/> : null}
+         
         </div>
     )
 }
