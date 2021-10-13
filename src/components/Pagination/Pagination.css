@@ -1,0 +1,22 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.pagination{
+    width: 100%;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+.pagination li{
+    width: 30px;
+    height: 30px;
+    background-color: #ee9b01;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(175, 3, 38);
+    border-radius: 10px;
+    cursor: pointer;
+}
