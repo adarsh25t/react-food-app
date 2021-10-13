@@ -1,0 +1,27 @@
+.popup{
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.637);
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.popup-details{
+    width: 600px;
+    height: 450px;
+    background-color: black;
+}
+.popup-details h2{
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 3px;
+    font-size: 30px;
+    font-weight: 500;
+}

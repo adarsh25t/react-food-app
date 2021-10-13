@@ -11,7 +11,6 @@ function Pagination(props) {
     function chageDishes(page){
         props.setcurrentPage(page.target.id)
     }
-
   
     let pages = numberOfpages.map((pageNumber)=>{
         return(
@@ -19,8 +18,23 @@ function Pagination(props) {
         )
     })
 
+
+    // the first item display
+    let NumberOfPages = [];
+
+    for(let i=1; i<= Math.ceil(props.OneDish.length/props.itemsPerPage); i++){
+        NumberOfPages.push(i)
+    }
+    let page = NumberOfPages.map((pageNumber)=>{
+        return(
+            <li id={pageNumber} onClick={chageDishes}>{pageNumber}</li>
+        )
+    })
+
+
     return (
         <ul className="pagination">
+            {page}
             {pages}
         </ul>
     )
