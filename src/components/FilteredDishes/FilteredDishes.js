@@ -1,26 +1,43 @@
 import React, { useState } from 'react'
 import FilterCardDish from '../FilterCardDish/FilterCardDish';
 import Pagination from '../Pagination/Pagination';
+import Popup from '../Popup/Popup';
 import './FilteredDishes.css'
 function FilteredDishes(props) {
-
+    
+    // filter dish state
     let [allmenus,setallmenus] = useState(props.specialmenu);
     let [filteritem,setfilteritem] = useState([]);
     let [activeDish,setactiveDish] = useState('Beef');
-
+    
+    // pagination state
     let [currentPage,setcurrentPage] = useState(1);
     let [itemsPerPage,setitemsPerPage] = useState(4);
    
+    // popup states
+    let [filterpopup,setfilterpopup] = useState(false)
+    let [currentDish,setcurrentDish] = useState();
    
+    // pagination
     let indexofLastDish = currentPage * itemsPerPage; 
     let indexofFirstDish = indexofLastDish - itemsPerPage;
     let showTheDishes = filteritem.slice(indexofFirstDish,indexofLastDish);
+    
+    // show popup 
+    function showPopupHandlers(item){
+        setfilterpopup(true)
+        setcurrentDish(item);
+    }
+    // clode popup
+    function closePopupHandlers(){
+        setfilterpopup(false);
+    }
   
     // display one dish item page loading time
     let OneDish = props.singleDish.filter((item)=>{
         return item.strCategory === 'Beef';
     }).map(item=>{
-        return <FilterCardDish item={item}/>
+        return <FilterCardDish item={item} showPopup={showPopupHandlers}/>
     });
    
     // pageination in one dish item page loading time
@@ -34,7 +51,7 @@ function FilteredDishes(props) {
         let FilteredDishesAre = allmenus.filter((items)=>{
             return filterName === items.strCategory
         }).map((item)=>{
-            return <FilterCardDish item={item}/>
+            return <FilterCardDish item={item} showPopup={showPopupHandlers}/>
         })
         setfilteritem(FilteredDishesAre);
     } 
@@ -51,6 +68,7 @@ function FilteredDishes(props) {
 
     return (
         <div className="filtered-dishes">
+            {filterpopup &&  <Popup currentDish={currentDish} closepopup={closePopupHandlers}/>}
             <h1 className="heading">Choose your dishes</h1>
             <p className="heading-sub">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto quia asperiores provident itaque?</p>
             <div className="menucategory">

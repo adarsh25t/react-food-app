@@ -1,15 +1,12 @@
 import React from 'react';
 import './cardDish.css'
-function CardDish(props) {
+function CardDish({showpopup,dish}) {
     
-    function showPopupHandler(){
-        console.log();
-    }
-
+  
     return (
         <div className="dish-card">
-            <img src={props.dish.strMealThumb} alt="" onClick={showPopupHandler}/>
-            <h2>{props.dish.strMeal}</h2>
+            <img src={dish.strMealThumb} alt="" onClick={()=>showpopup(dish)}/>
+            <h2>{dish.strMeal}</h2>
         </div>
     )
 }

@@ -8,6 +8,7 @@
     height: 170px;
     object-fit: cover;
     border-radius: 10px;
+    cursor: pointer;
 }
 .dish-card h2{
     width: 100%;
