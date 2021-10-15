@@ -1,7 +1,6 @@
 import React from 'react';
 import './Popup.css';
-function Popup({closepopup,currentDish}) {
-    console.log(currentDish);
+function Popup({closepopup,currentDish,AddToCart}) {
     return (
         <div className="popup">
             <div className="popup-details">
@@ -14,7 +13,7 @@ function Popup({closepopup,currentDish}) {
                 <h4><span>{currentDish.strIngredient1}</span><span>{currentDish.strIngredient2}</span>
                 <span>{currentDish.strIngredient3}</span><span>{currentDish.strIngredient4}</span>
                 <span>{currentDish.strIngredient5}</span><span>{currentDish.strIngredient6}</span></h4>
-                <button>Add to cart</button>
+                <button onClick={()=>AddToCart(currentDish.strMealThumb, currentDish.strMeal)}>Add to cart</button>
             </div>
         </div>
     )
