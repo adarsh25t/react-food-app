@@ -1,0 +1,224 @@
+.checkout-wrapper{
+    height: 80vh;
+    padding: 0px 100px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.left{
+    width: 70%;
+    height: auto;
+    background-color: white;
+}
+.checkout-titles{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 30px;
+    border-bottom: 1px solid rgba(134, 133, 133, 0.822);
+}
+.checkout-titles h2{
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    letter-spacing: 2px;
+    color: rgb(165, 3, 35);
+}
+.checkout-titles h3{
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    letter-spacing: 2px;
+    color: #ee9b01;
+}
+.checkout-titles h3 span{
+    color: black;
+}
+.cart-title{
+    display: flex;
+    margin-top: 30px;
+}
+.cart-title div{
+    width: 150px;
+}
+.cart-title .first{
+    width: 400px;
+}
+.cart-items{
+    margin-top: 50px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+   
+}
+.product-details{
+    width: 400px;
+    display: flex;
+    
+}
+.product-details img{
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 20px;
+    
+}
+.checkout-details{
+    margin-left: 10px;
+}
+.checkout-details h3{
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+}
+.checkout-details h4{
+    width: 100px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    background-color: #ee9b01;
+    text-align: center;
+    border-radius: 20px;
+    color: rgb(150, 0, 30);
+    letter-spacing: 1.5px;
+    margin-top: 10px;
+}
+.checkout-details button{
+    padding: 7px 25px;
+    background-color: rgb(165, 3, 35);
+    margin-top: 15px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    color: white;
+    letter-spacing: 1.5px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.price-price{
+    width: 150px;
+    display: flex;
+    align-items: center;
+   
+}
+.price-price input{
+    width: 50px;
+    height: 30px;
+}
+.price-price h4{
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px;
+    cursor: pointer;
+    padding: 5px;
+    margin-left: -5px;
+}
+
+.price{
+    width: 150px;
+    
+}
+.price h2{
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1.5px;
+    font-weight: 500;
+    font-size: 21px;
+}
+.total-price{
+    width: 150px;
+}
+.total-price h2{
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1.5px;
+    font-weight: 500;
+    font-size: 21px;
+}
+table tr{
+    margin-top: 50px;
+}
+
+
+.right{
+    width: 30%;
+    height: 500px;
+    background-color: rgba(207, 207, 207, 0.842);
+}
+.right h2{
+    margin: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    border-bottom: 1px solid rgba(134, 133, 133, 0.822);
+    padding-bottom: 13px;
+    text-align: center;
+}
+.order-i{
+    padding: 0px 30px;
+}
+.item-coust{
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Poppins', sans-serif;
+}
+.item-coust h3{
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #96001e;
+}
+.item-coust h3:last-child{
+    color: black;
+}
+.shipping{
+    margin-top: 20px;
+}
+.shipping h4{
+    font-family: 'Poppins', sans-serif;
+}
+.shipping input{
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 30px;
+    padding-left: 10px;
+    margin-top: 10px;
+}
+.promocode{
+    margin-top: 20px;
+}
+.promocode h4{
+    font-family: 'Poppins', sans-serif;
+}
+.promocode input{
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 30px;
+    padding-left: 10px;
+    margin-top: 10px;
+}
+.apply{
+    margin-top: 15px;
+    background-color: tomato;
+    padding: 5px 10px;
+    border: none;
+    outline: none;
+    color: white;
+    letter-spacing: 2px;
+}
+.total-cost{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    border-bottom: 1px solid rgba(134, 133, 133, 0.822);
+    padding-bottom: 20px;
+}
+.checkout-all{
+    margin-left: 30px;
+    margin-right: 30px;
+    text-align: center;
+    margin-top: 20px;
+    background-color: #96001e;
+    padding: 10px 20px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-size: 16px;
+}

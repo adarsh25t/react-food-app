@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import './Header.css';
 import { headerDetails } from "./Headerdetails";
 
+
 function Header(){
     let [slider,setslider] = useState(0)
 
@@ -20,25 +21,6 @@ function Header(){
     return(
         
         <div className="header">
-            <div className="navbar">
-                <h1><span>food</span>hub</h1>
-
-                <ul>
-                    <li>Home</li>
-                    <li>About Us</li>
-                    <li>Menu</li>
-                    <li>Reviews</li>
-                    <li>Contact</li>
-                </ul>
-
-                <div className="header-3">
-                    <div className="cart">
-                        <i class="fas fa-shopping-cart"></i>
-                        <h2>0</h2>
-                    </div>
-                    <button>Sign Up</button>
-                </div>
-            </div>
 
             <div className="wrapper">
                 <div className="slider-wrapper">
