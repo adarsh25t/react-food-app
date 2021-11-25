@@ -1,14 +1,13 @@
 .special-dishes{
     height: auto;
-    padding: 70px 100px;
 }
-.heading{
+.headings{
     text-align: center;
-    font-family: 'Poppins', sans-serif;
-    font-size: 40px;
+    font-family: 'Satisfy', cursive;
+    font-size: 35px;
     letter-spacing: 2px;
-    color: rgb(170, 0, 34);
-    font-weight: 600;
+    color: rgb(177, 115, 1);
+    font-weight: bold;
 }
 .heading-sub{
     text-align: center;
@@ -18,5 +17,5 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    margin-top: 80px;
+    margin-top: 30px;
 }

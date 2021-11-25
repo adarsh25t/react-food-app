@@ -3,17 +3,18 @@ import CardDish from '../CardDish/CardDish';
 import Popup from '../Popup/Popup';
 import './Specialdishes.css';
 import {AllMenuContext} from '../AllMenuContext';
+import Checkout from '../Checkout/Checkout';
 
 
 
-function SpecialDishes() {
+function SpecialDishes({setcartItem}) {
 
     let [showpopup,setshowpopup]  = useState(false);
     let [currentDish,setcurrentDish] = useState();
     let [cart,setcart] = useState([])
 
     const Allmenu = useContext(AllMenuContext);
-    
+
     // let show the popup
     function showPopupHandler(dish){
         setshowpopup(true);
@@ -25,15 +26,16 @@ function SpecialDishes() {
         setshowpopup(false);
     }
 
-    function AddToCart(Images,Name){
+    function AddToCart(Images,Name,Category){
         setcart([
             ...cart,{
                 'Image' : Images,
-                'Name' : Name
+                'Name' : Name,
+                'Category' : Category  
             }
         ])
     }
-    console.log(cart.length);
+    setcartItem(cart)
 
     let dishItemlength = 8;
     let specialDish = Allmenu.map((dish,index)=>{
@@ -42,9 +44,9 @@ function SpecialDishes() {
         }
     })
     return (
-        <div className="special-dishes">
+        <div className="special-dishes container">
             {showpopup && <Popup closepopup={closePopupHandler} currentDish={currentDish} AddToCart={AddToCart}/>}
-            <h1 className="heading">Our Special Dishes</h1>
+            <h1 className="headings">Our Special Dishes</h1>
             <p className="heading-sub">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto quia asperiores provident itaque?</p>
             <div className="special-dish">
                 {specialDish}

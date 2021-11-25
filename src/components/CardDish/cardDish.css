@@ -2,6 +2,7 @@
     width: 250px;
     height: 200px;
     position: relative;
+    overflow: hidden;
 }
 .dish-card img{
     width: 100%;
@@ -12,13 +13,15 @@
 }
 .dish-card h2{
     width: 100%;
-    font-size: 13px;
+    font-size: .8rem;
     font-family: 'Poppins', sans-serif;
-    font-weight: 500;
+    font-weight: 600;
     letter-spacing: 1px;
     position: absolute;
-    bottom: 30px;
-    color: rgb(153, 0, 31);
+    bottom: 20px;
+    color: rgb(0, 0, 0);
     background-color: #ee9b01;
-    padding: 3px 0px;
+    padding: 10px 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
 }

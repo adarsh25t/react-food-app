@@ -1,10 +1,10 @@
 .popup{
     position: fixed;
     left: 0;
-    top: 0;
+    top: 60px;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.637);
+    background-color: rgba(95, 94, 94, 0.247);
     z-index: 100;
     display: flex;
     flex-direction: column;
@@ -12,8 +12,8 @@
     align-items: center;
 }
 .popup-details{
-    width: 600px;
-    height: 450px;
+    width: 700px;
+    height: 470px;
     background-color: black;
     position: relative;
     padding: 5px 30px;
@@ -21,7 +21,7 @@
 }
 .fa-window-close{
     position: absolute;
-    color: rgb(143, 1, 29);
+    color: rgb(204, 139, 0);
     right: 10px;
     top: 10px;
     font-size: 30px;
@@ -29,79 +29,89 @@
    
 }
 .popup-details h2{
-    color: white;
+    color: rgb(206, 134, 0);
     text-align: center;
     margin-top: 20px;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Satisfy', cursive;
     letter-spacing: 3px;
-    font-size: 30px;
-    font-weight: 500;
-    
+    font-size: 35px;
+    font-weight: bold;
 }
-.popup-details img{
-    width: 90%;
-    height: 150px;
+.popup-details h2 span{
+    color: white;
+}
+.popup-details .pop-details{
+    display: flex;
+    width: 100%;
+}
+.details-img{
+    width: 600px;
+    height: 220px;
     object-fit: cover;
     border-radius: 10px;
 }
-
-.popup-details h3{
-    color: #ee9b01;
-    position: absolute;
-    top: 180px;
-    left: 30px;
-    background-color: rgba(0, 0, 0, 0.637);
-    width: 82%;
-    padding: 10px 10px;
-    box-shadow: 1px 1px 41px 7px #000000;
-    font-family: 'Poppins', sans-serif;
-    letter-spacing: 2px;
-    font-weight: 500;
+.detail{
+    margin-left: 20px;
 }
-.popup-details p{
+.detail h3{
     color: white;
     font-family: 'Poppins', sans-serif;
-    font-size: 13px;
-    height: 80px;
-    overflow-y: auto;
-    margin-top: 10px;
+    font-size: 23px;
+    
 }
-.popup-details h1{
-    color: white;
-    margin-top: 10px;
+.detail h1{
+    font-size: 19px;
+    color: rgb(209, 136, 0);
+    font-family: 'Satisfy', cursive;
+    letter-spacing: 3px;
+    font-weight: bolder;
+}
+.detail p{
+    font-size: 15px;
+    color: rgb(255, 255, 255);
     font-family: 'Poppins', sans-serif;
-    letter-spacing: 2px;
-    font-size: 22px;
-    background-color: rgb(143, 0, 29);
-    padding-left: 10px;
+    height: 150px;
+    overflow-y: scroll;
 }
 .popup-details h4{
     display: flex;
-    margin-left: -10px;
-    margin-top: 10px;
+    flex-wrap: wrap;
 }
 .popup-details h4 span{
-    color: #ee9b01;
-    padding: 3px 10px;
-    font-family: 'Poppins', sans-serif;
-    font-size: 13px;
+    font-size: 16px;
+    color: white;
+    border: 1px solid rgb(218, 141, 0);
+    padding: 5px 15px;
+    margin: 5px;
     border-radius: 10px;
 }
 .popup-details button{
-    padding: 7px 25px;
-    margin-top: 10px;
-    background-color: rgb(158, 0, 32);
-    outline: none;
-    border: none;
+    font-size: 16px;
     color: white;
+    background-color: rgb(204, 133, 0);
+    padding: 10px 30px;
+    margin: 5px;
+    border-radius: 10px;
+    border: none;
     font-family: 'Poppins', sans-serif;
-    letter-spacing: 2px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: 600;
-}    
+}
 .popup-details button:hover{
-    background-color: white;
-    color: black;
-    transition: 2s;
+    background-color: transparent;
+    border: 1px solid rgb(214, 139, 0);
+}
+
+
+
+
+
+.detail p::-webkit-scrollbar
+{
+	width: 12px;
+}
+
+.detail p::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #cf9800;
 }

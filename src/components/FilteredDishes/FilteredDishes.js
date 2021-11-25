@@ -97,9 +97,9 @@ function FilteredDishes() {
 
 
     return (
-        <div className="filtered-dishes">
+        <div className="filtered-dishes container">
             {filterpopup &&  <Popup currentDish={currentDish} closepopup={closePopupHandlers}/>}
-            <h1 className="heading">Choose your dishes</h1>
+            <h1 className="headings">Choose your dishes</h1>
             <p className="heading-sub">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto quia asperiores provident itaque?</p>
             <div className="menucategory">
                 {MenuCategory}

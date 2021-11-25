@@ -1,13 +1,8 @@
-*{
-    padding: 0;
-    margin: 0;
-}
+
 .filtered-dishes{
-    padding: 60px 100px;
     height: 500px;
 }
 .menucategory{
-    padding-top: 30px;
     display: flex;
     flex-wrap: wrap;
     
@@ -16,19 +11,20 @@
     cursor: pointer;
 }
 .menucategory .category h2{
-    font-size: 18px;
-    color: rgb(173, 0, 35);
+    font-size: 15px;
+    color: black;
     font-family: 'Poppins', sans-serif;
     letter-spacing: 2px;
     font-weight: 500;
-    background-color: #ee9b01;
-    padding: 10px 25px;
+    padding: 8px 20px;
     margin: 5px;
     border-radius: 20px;
+    border: .1rem solid orange;
 }
 .menucategory .category h2.activedish{
     background-color: black;
     color: white;
+    border: none;
 }
 .menucategory .category:hover h2{
     color: white;
@@ -38,7 +34,6 @@
     height: auto;
     display: flex;
     flex-wrap: wrap;
-    margin-top: 60px;
 }
 
 .no-item{
@@ -59,4 +54,10 @@
     letter-spacing: 2px;
     box-shadow: 2px 4px 6px 2px rgb(51, 50, 50);
     font-size: 19px;
+}
+.filtered-dishes-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 30px;
 }

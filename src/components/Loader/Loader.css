@@ -1,0 +1,10 @@
+.loader{
+    background-color: rgb(0, 0, 0);
+}
+
+
+.load h1{
+    color: orange;
+    font-size: 25px;
+    font-family: 'Satisfy', cursive;
+}

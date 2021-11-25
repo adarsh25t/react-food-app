@@ -1,9 +1,10 @@
 import React from 'react'
+import './Loader.css'
 
 function Loader() {
     return (
         <div className="loader">
-            <div className="ripple">
+            <div className="load">
                 <h1>loading...</h1>
             </div>
         </div>

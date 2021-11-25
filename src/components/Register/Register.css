@@ -1,0 +1,54 @@
+.register{
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(49, 49, 49, 0.699);
+    z-index: 100;
+    height: 1000vh;
+}
+.register-box{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 100px auto;
+    background-color: rgba(71, 71, 70, 0.575);
+    padding: 30px 40px;
+    border-radius: 5px;
+}
+.register-box input{
+    width: 100%;
+    height: 40px;
+    margin: 10px;
+    outline: none;
+    padding-left: 15px;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    background-color: transparent;
+    border: none;
+    color: white;
+    border-bottom: 1px solid black;
+}
+::placeholder{
+    color: black;
+}
+.register-box button{
+   width: 200px;
+   height: 40px;
+   margin-top: 10px;
+   background-color: #ee9b01;
+   color: rgb(15, 6, 6);
+   font-size: 17px;
+   letter-spacing: 2px;
+   font-family: 'Poppins', sans-serif;
+   text-transform: uppercase;
+   border: none;
+   border-radius: 10px;
+   cursor: pointer;
+   font-weight: 600;
+}
+.register-box button:hover{
+    background-color: rgb(167, 0, 33);
+}
